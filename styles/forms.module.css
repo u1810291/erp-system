@@ -4,7 +4,50 @@
   border: 1px solid #D1D1D1;
   border-radius: 12px;
   box-sizing: border-box;
+  outline: none;
   width: 100%;
 }
+.inputField input {
+  position: relative;
+}
 
-.iconBadge {}
+.icon {
+  position: relative;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.iconBadge {
+  position: absolute;
+  left: -5px;
+  bottom: 0px;
+  border-radius: 10px;
+  width: 14px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 12px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: orangered;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  border: none;
+  padding-left: 15px;
+  color: #151515;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background: url('../static/icons/dropdownArrow.svg') no-repeat 95% center;
+  padding-right: 20px;
+  border-right: 1px solid var(--border-color-v1);
+  height: 42px;
+}
+
+.dropdown option {
+  position: absolute;
+  top: 10px;
+}
