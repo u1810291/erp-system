@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '@styles/forms.module.css';
-import { Divider, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { DropDown } from '@components/DropDown';
 
 export const InputField = ({ select, ...props }: any) => {
