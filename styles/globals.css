@@ -12,9 +12,16 @@ a {
 }
 
 * {
+  padding: 0;
   box-sizing: border-box;
+  margin: 0;
+    --main-text-color: #6A983C;
+    --border-color-v1: #eaeaea;
 }
-
+main {
+  padding: 0;
+  margin: 0;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +30,8 @@ a {
     color: white;
     background: black;
   }
+}
+
+.chakra-divider {
+  border-top: 1px solid var(--border-color-v1) !important;
 }

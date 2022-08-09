@@ -1,0 +1,10 @@
+.inputField {
+  height: 42px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.iconBadge {}
