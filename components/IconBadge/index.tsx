@@ -13,7 +13,7 @@ type IconBadgeType = {
 export const IconBadge = ({ imgSrc, alt, text, ...props }: IconBadgeType) => {
   return (
     <div className={styles.icon}>
-      <Image src={imgSrc} alt={alt} {...props} width={30} height={30} />
+      <Image src={imgSrc} alt={alt} {...props} />
       <Badge px='2' className={styles.iconBadge} {...props}>
         {text}
       </Badge>

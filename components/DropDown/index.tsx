@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '@styles/forms.module.css';
 
-type DropDownOptionType = { 
+export type DropDownOptionType = { 
   id: string; 
   value: string; 
   label: string
