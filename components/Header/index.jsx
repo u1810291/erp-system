@@ -40,7 +40,7 @@ export const Header = ({ component }) => (
         <Image src={imageUrl} alt='logo' />
       </Box>
       <Box width='500px'>
-        <InputField select={data} />
+        <InputField select={data} placeHolder='Some text' />
       </Box>
       <Flex justifyContent='space-between' gap={20}>
         <IconBadge imgSrc={UserIcon} alt='User'/>

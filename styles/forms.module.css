@@ -1,14 +1,21 @@
 .inputField {
   height: 42px;
-  background: #F9F9F9;
-  border: 1px solid #D1D1D1;
+  background: #f9f9f9;
+  border: 1px solid #d1d1d1;
   border-radius: 12px;
   box-sizing: border-box;
   outline: none;
   width: 100%;
-}
-.inputField input {
   position: relative;
+}
+
+.inputField input {
+  outline: none;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background-color: transparent;
 }
 
 .icon {
@@ -27,13 +34,14 @@
   text-align: center;
   line-height: 12px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: orangered;
 }
 
 .dropdown {
   position: absolute;
   left: 0;
+  top: 0;
   border: none;
   padding-left: 15px;
   color: #151515;
@@ -41,13 +49,8 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
-  background: url('../static/icons/dropdownArrow.svg') no-repeat 95% center;
+  background: url("../static/icons/dropdownArrow.svg") no-repeat 95% center;
   padding-right: 20px;
   border-right: 1px solid var(--border-color-v1);
   height: 42px;
-}
-
-.dropdown option {
-  position: absolute;
-  top: 10px;
 }

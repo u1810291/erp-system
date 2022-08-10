@@ -3,11 +3,18 @@ import Image from 'next/image';
 import { Badge } from '@chakra-ui/react';
 import styles from '@styles/forms.module.css'
 
-export const IconBadge = ({ imgSrc, alt, text }: { imgSrc: string; alt: string; text: string }) => {
+type IconBadgeType = { 
+  imgSrc: string; 
+  alt: string; 
+  text?: string; 
+  props?: any 
+}
+
+export const IconBadge = ({ imgSrc, alt, text, ...props }: IconBadgeType) => {
   return (
     <div className={styles.icon}>
-      <Image src={imgSrc} alt={alt}/>
-      <Badge px='2' className={styles.iconBadge}>
+      <Image src={imgSrc} alt={alt} {...props} width={30} height={30} />
+      <Badge px='2' className={styles.iconBadge} {...props}>
         {text}
       </Badge>
     </div>
