@@ -1,6 +1,6 @@
 .inputField {
   height: 42px;
-  background: #f9f9f9;
+  background: transparent;
   border: 1px solid #d1d1d1;
   border-radius: 12px;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 .inputField input {
   outline: none;
-  height: 40px;
+  height: 42px;
   width: 100%;
   border: none;
   border-radius: 12px;
@@ -52,5 +52,12 @@
   background: url("../static/icons/dropdownArrow.svg") no-repeat 95% center;
   padding-right: 20px;
   border-right: 1px solid var(--border-color-v1);
-  height: 42px;
+  height: 40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dropdown {
+    color: #ACBAC7;
+  }
+
 }

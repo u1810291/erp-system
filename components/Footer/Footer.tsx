@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '@styles/Home.module.css'
+import styles from '@styles/Home.module.css';
+import Vercel from '@static/logo/vercel.svg'
 
 export const Footer = () => (
   <footer className={styles.footer}>
@@ -11,7 +12,7 @@ export const Footer = () => (
     >
       Powered by{' '}
       <span className={styles.logo}>
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        <Image src={Vercel} alt="Vercel Logo" width={72} height={16} />
       </span>
     </a>
   </footer>

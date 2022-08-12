@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import styles from '@styles/Home.module.css';
 import { Heading as Head } from '@components/Header/Head';
 import { Footer } from '@components/Footer/Footer';
-import { Container, Divider } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import { Header } from '@components/Header';
 
 const Home: NextPage = () => {

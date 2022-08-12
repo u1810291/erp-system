@@ -1,5 +1,8 @@
 .container {
   padding: 0 1rem;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
 }
 
 .main {
@@ -117,15 +120,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+
+  .container {
+    background: #22272e;
+    color: #ACBAC7;
   }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
+
+  .logo {
+    filter: invert(85%) sepia(3%) saturate(1168%) hue-rotate(168deg) brightness(87%) contrast(91%);
   }
 }
-

@@ -6,16 +6,16 @@ import { IconBadge } from '@components/IconBadge';
 import SearchIcon from '@static/icons/search.svg';
 
 type InputFieldType = {
-  select: Array<DropDownOptionType>,
+  data: Array<DropDownOptionType>,
   props?: any,
 }
 
-export const InputField = ({ select, ...props }: any) => {
-  if(!select?.length) return <Box className={styles.inputField}><input {...props}/></Box>
+export const InputField = ({ data, ...props }: any) => {
+  if(!data?.length) return <Box className={styles.inputField}><input {...props}/></Box>
   return (
     <Flex justifyContent="center" alignItems="center" className={styles.inputField} p={5}>
       <Box w={150}>
-        <DropDown options={select} />
+        <DropDown options={data} />
       </Box>
       <input {...props}/>
       <IconBadge imgSrc={SearchIcon} alt="search" props={{ width: 30, height: 30 }} />

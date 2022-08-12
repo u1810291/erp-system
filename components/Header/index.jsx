@@ -11,6 +11,8 @@ import imageUrl from '@static/logo/logo-v1.svg';
 import { InputField } from '@components/Input';
 import UserIcon from '@static/icons/user.svg'
 import PackIcon from '@static/icons/pack.svg'
+import { BreadCrumb } from '@components/BreadCrumb';
+import { Categories } from '@components/Categories';
 
 const data = [
   {
@@ -29,6 +31,36 @@ const data = [
     label: 'option three'
   },
 ]
+const breadCrumbData = [
+  {
+    id: 'asddsada',
+    value: 'Home',
+    link: '/home',
+    isCurrentPage: false
+  },
+  {
+    id: 'asddsada2',
+    value: 'About',
+    link: '/about',
+    isCurrentPage: false
+  },
+  {
+    id: 'asddsada3',
+    value: 'Contact',
+    link: '/contact',
+    isCurrentPage: true
+  },
+]
+const categoriesData = [
+  {
+    id: 'idstring1',
+    label: 'Some name'
+  },
+  {
+    id: 'idstring2',
+    label: 'Some name'
+  },
+]
 
 export const Header = ({ component }) => (
   <>
@@ -40,12 +72,14 @@ export const Header = ({ component }) => (
         <Image src={imageUrl} alt='logo' />
       </Box>
       <Box width='500px'>
-        <InputField select={data} placeHolder='Some text' />
+        <InputField data={data} placeholder='Some text' />
       </Box>
       <Flex justifyContent='space-between' gap={20}>
         <IconBadge imgSrc={UserIcon} alt='User'/>
         <IconBadge imgSrc={PackIcon} alt='Pack' text='5'/>
       </Flex>
     </Flex>
+    <BreadCrumb data={breadCrumbData}/>
+    <Categories data={categoriesData}/>
   </>
 )
